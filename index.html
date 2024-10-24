@@ -1,35 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Shopping List App</title>
-         <link rel="stylesheet" href="main.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrianne Young | Web Developer</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+    <link rel="stylesheet" href="style-grid.css" type="text/css" media="all">
+</head>
 
-    <body>
-        <div id="shopping-list">
-            <h1>{{ header ||'Welcome' }}</h1>
-            <ul>
-                <li v-for="item in items" :key="item.id">{{item.label}}</li>
-               
-            </ul>    
+<body class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="masthead">
+        <code class="identifier"><prev>.header</prev></code>
+        
+        <p>Hello, my name is Adrianne Young. I am a Web Devloper who is eager to help build amazing websites!</p>
+        <p>If you would like to learn more about my work history, take a look at my <a href="example.com"></a>.</p>
+        
+    </header>
+    
+    <div class="page-title">
+            <code class="identifier"><pre>.page-title</pre></code>
+           <img id="img" src="homeimage.jpg" alt="palm trees and sky">
+        <h1>Adrianne Young</h1>
+        <h2>Web Developer</h2>
+
+    </div>
+    <div class="navy">
+        <nav>
+        
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Links</a></li>
+            
+        </ul>
+        </nav>
+    </div>
+
+    <main id="content" class="main-content">
+        <code class="identifier"><pre>.main-content</pre></code>
+        <section>
+            <h2>Featured Projects</h2>
+            <p>View selected projects below. More information can be found at <a class="btn" href="http://christinatruong.com">AdrianneYoung.c om</a>.</p>
+    
+            
+            <section>
+              <h3>Project Name</h3>
+              <img  src="bg-home-office-studio.jpg" alt="description of image" width="200px" height="200px">
+              <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
+              <a href="#" target="_blank">View project / case study</a>
+            </section>
            
-        </div>
+          </section>
+    
+          <!-- ***********************  WORK EXPERIENCE  *********************** -->
+          <section>
+            <h2>Work Experience</h2>
+            <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
+    
+            <!-- Copy this whole <section> block to add more jobs. -->
+            <section>
+              <h3>Job title</h3>
+              <p>Company Name</p>
+              <p>Date at job</p>
+              <p>Job summary goes here. Add as many paragraphs as you need.</p>
+              <p>Optional list:</p>
+              <ul>
+                <li>Delete this list if you don't need it.</li>
+                <li>Created...</li>
+                <li>Lead...</li>
+                <li>Responsible for...</li>
+              </ul>
+            </section>
+            <!-- End of Job block. -->
+          </section>
+    
+          <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+          <section>
+            <h2>Education</h2>
+    
+            <!-- Copy this whole <section> block to add more schools. -->
+            <section>
+              <h3>Wake Tech Community College</h3>
+              <p>Designation received or program name, year attended</p>
+              <p>Summary or accomplishments.</p>
+            </section>
+            <!-- End of School block. -->
+          </section>
+    
+       
+       
+    </main>
 
-        <script src="https://unpkg.com/vue@3"></script>
-        <script>
-            const shoppingListApp = Vue.createApp({
-                data() {
-                return {
-                    header: 'Shopping List App',
-                    items: [
-                    {id: 1, label: "10 party hats"},
-                     {id: 2, label: "2 board games"},
-                     {id: 3, label: "20 cups"},
-                ]
-                }
-            }
-        }).mount('#shopping-list')
-        </script>
-    </body>
-    </html>
+    <footer class="footer-content">
+        <ul>
+            <li><a href="mailto:email@example.com">email@example.com</a></li>
+            <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+          </ul>
+    </footer >
+</body>
+</html>
